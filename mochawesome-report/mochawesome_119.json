@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-08-02T20:07:03.508Z",
+    "end": "2022-08-02T20:07:07.120Z",
+    "duration": 3612,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 40,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5618a21b-ebe5-485b-93ad-d9b0db17494f",
+      "title": "",
+      "fullFile": "cypress/e2e/UsingCypressXpath.cy.js",
+      "file": "cypress/e2e/UsingCypressXpath.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c825e711-8a2d-40c8-bd19-6e02b29e23ba",
+          "title": "Using Cypress Xpath",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get elements using id",
+              "fullTitle": "Using Cypress Xpath Get elements using id",
+              "timedOut": null,
+              "duration": 1575,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath('//*[@id=\"input-city\"]').clear().type('Guiratinga');\ncy.xpath('//*[@id=\"search-time\"]').click();\ncy.xpath('//*[@id=\"best-time\"]').should('be.visible');\ncy.xpath('//*[@id=\"best-hour\"]').should('be.visible').and('contain.text', 'horas');\ncy.xpath('//*[@id=\"best-temperature\"]').should('be.visible').and('contain.text', 'temperatura');",
+              "err": {},
+              "uuid": "6dff027c-88f2-4189-9a3e-c558406a482d",
+              "parentUUID": "c825e711-8a2d-40c8-bd19-6e02b29e23ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get elements using data-testid attribute",
+              "fullTitle": "Using Cypress Xpath Get elements using data-testid attribute",
+              "timedOut": null,
+              "duration": 973,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath('//*[@data-testid=\"input-city\"]').clear().type('Guiratinga');\ncy.xpath('//*[@data-testid=\"search-time\"]').click();\ncy.xpath('//*[@data-testid=\"best-time\"]').should('be.visible');\ncy.xpath('//*[@data-testid=\"best-hour\"]').should('be.visible').and('contain.text', 'horas');\ncy.xpath('//*[@data-testid=\"best-temperature\"]').should('be.visible').and('contain.text', 'temperatura');",
+              "err": {},
+              "uuid": "dfb94e2e-b082-4288-88b9-dad32c461fa0",
+              "parentUUID": "c825e711-8a2d-40c8-bd19-6e02b29e23ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get elements using text",
+              "fullTitle": "Using Cypress Xpath Get elements using text",
+              "timedOut": null,
+              "duration": 971,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.xpath('//input[@value=\"São Paulo\"]').clear().type('Guiratinga');\ncy.xpath('//*[text()[contains(.,\"Buscar melhor horário\")]]').click();\ncy.xpath('//*[text()[contains(.,\"O melhor horário para você tomar seu banho hoje é\")]]').should('be.visible');\ncy.xpath('//*[text()[contains(.,\"horas\")]]').should('be.visible');\ncy.xpath('//*[text()[contains(.,\"temperatura\")]]').should('be.visible');",
+              "err": {},
+              "uuid": "7cb00a0e-8a30-44b3-88d3-91e9b2f719c4",
+              "parentUUID": "c825e711-8a2d-40c8-bd19-6e02b29e23ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get hidden button by data test id and try click",
+              "fullTitle": "Using Cypress Xpath Get hidden button by data test id and try click",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "bad30086-9574-4898-b23d-ed9d53a6b127",
+              "parentUUID": "c825e711-8a2d-40c8-bd19-6e02b29e23ba",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get hidden button by text id and try click",
+              "fullTitle": "Using Cypress Xpath Get hidden button by text id and try click",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "b8584e8f-f1fc-43a9-9493-1fa76f4ec7ec",
+              "parentUUID": "c825e711-8a2d-40c8-bd19-6e02b29e23ba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6dff027c-88f2-4189-9a3e-c558406a482d",
+            "dfb94e2e-b082-4288-88b9-dad32c461fa0",
+            "7cb00a0e-8a30-44b3-88d3-91e9b2f719c4"
+          ],
+          "failures": [],
+          "pending": [
+            "bad30086-9574-4898-b23d-ed9d53a6b127",
+            "b8584e8f-f1fc-43a9-9493-1fa76f4ec7ec"
+          ],
+          "skipped": [],
+          "duration": 3519,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

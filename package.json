@@ -1,0 +1,39 @@
+{
+  "name": "meu-time-bbb",
+  "version": "0.1.90",
+  "private": true,
+  "scripts": {
+    "start": "PORT=3098 react-scripts start",
+    "build": "npm version patch --force && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.3",
+    "cypress": "^10.3.1",
+    "cypress-qase-reporter": "^1.4.2-alpha.2",
+    "cypress-repeat": "^2.3.3",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^8.2.0",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}

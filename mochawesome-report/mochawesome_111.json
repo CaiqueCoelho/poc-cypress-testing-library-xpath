@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-08-02T20:06:14.458Z",
+    "end": "2022-08-02T20:06:19.103Z",
+    "duration": 4645,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 40,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d9aa61a-51b5-4ee5-9e68-2a3d63272b52",
+      "title": "",
+      "fullFile": "cypress/e2e/JustCypress.cy.js",
+      "file": "cypress/e2e/JustCypress.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a60b34e4-bdfc-418f-958a-74a334c2d9c1",
+          "title": "Just using Cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get elements using id",
+              "fullTitle": "Just using Cypress Get elements using id",
+              "timedOut": null,
+              "duration": 2692,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#input-city').clear().type('Guiratinga');\ncy.get('#search-time').click();\ncy.get('#best-time').should('be.visible');\ncy.get('#best-hour').should('be.visible').and('contain.text', 'horas');\ncy.get('#best-temperature').should('be.visible').and('contain.text', 'temperatura');",
+              "err": {},
+              "uuid": "0d748730-c5ac-4a43-9b7e-8e850037c5c7",
+              "parentUUID": "a60b34e4-bdfc-418f-958a-74a334c2d9c1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get elements using data-testid attribute",
+              "fullTitle": "Just using Cypress Get elements using data-testid attribute",
+              "timedOut": null,
+              "duration": 1084,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataTestId('input-city').clear().type('Guiratinga');\ncy.getByDataTestId('search-time').click();\ncy.getByDataTestId('best-time').should('be.visible');\ncy.getByDataTestId('best-hour').should('be.visible').and('contain.text', 'horas');\ncy.getByDataTestId('best-temperature').should('be.visible').and('contain.text', 'temperatura');",
+              "err": {},
+              "uuid": "08ec0d47-b358-4594-a156-de2094ccc408",
+              "parentUUID": "a60b34e4-bdfc-418f-958a-74a334c2d9c1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get elements using text",
+              "fullTitle": "Just using Cypress Get elements using text",
+              "timedOut": null,
+              "duration": 829,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Qual cidade você está?').parent().find('input').clear().type('Guiratinga');\ncy.contains('Buscar melhor horário').click();\ncy.contains('O melhor horário para você tomar seu banho hoje é:').should('be.visible');\ncy.contains('horas').should('be.visible');\ncy.contains('temperatura').should('be.visible');",
+              "err": {},
+              "uuid": "a5d84ed2-79a1-47cf-a885-a603532f39a6",
+              "parentUUID": "a60b34e4-bdfc-418f-958a-74a334c2d9c1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get hidden button by data test id and try click",
+              "fullTitle": "Just using Cypress Get hidden button by data test id and try click",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "87092dbc-522b-4fa8-aa5a-7d089e5a18ff",
+              "parentUUID": "a60b34e4-bdfc-418f-958a-74a334c2d9c1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get hidden button by text id and try click",
+              "fullTitle": "Just using Cypress Get hidden button by text id and try click",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "25dc7116-2e14-4b0c-9c66-fb0f3955811b",
+              "parentUUID": "a60b34e4-bdfc-418f-958a-74a334c2d9c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0d748730-c5ac-4a43-9b7e-8e850037c5c7",
+            "08ec0d47-b358-4594-a156-de2094ccc408",
+            "a5d84ed2-79a1-47cf-a885-a603532f39a6"
+          ],
+          "failures": [],
+          "pending": [
+            "87092dbc-522b-4fa8-aa5a-7d089e5a18ff",
+            "25dc7116-2e14-4b0c-9c66-fb0f3955811b"
+          ],
+          "skipped": [],
+          "duration": 4605,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

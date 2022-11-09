@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-08-02T20:08:42.500Z",
+    "end": "2022-08-02T20:08:46.521Z",
+    "duration": 4021,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 40,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8b7b164f-26be-49cb-a813-7f07b8965a20",
+      "title": "",
+      "fullFile": "cypress/e2e/UsingCypresTestingLibrary.cy.js",
+      "file": "cypress/e2e/UsingCypresTestingLibrary.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "06415e85-c2de-4ad8-b10b-6270b4003999",
+          "title": "Using Cypress Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get elements using role",
+              "fullTitle": "Using Cypress Testing Library Get elements using role",
+              "timedOut": null,
+              "duration": 1799,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.findByRole('textbox').clear().type('Guiratinga');\ncy.findByRole('button').click();\ncy.findByRole('layout', {\n  id: \"best-time\"\n}).should('be.visible');\ncy.findByRole('text', {\n  id: \"best-hour\"\n}).should('be.visible').and('contain.text', 'horas');\ncy.findByRole('paragraph', {\n  id: \"best-temperature\"\n}).should('be.visible').and('contain.text', 'temperatura');",
+              "err": {},
+              "uuid": "b898bdb6-3153-4344-b4b2-aedbbb481aae",
+              "parentUUID": "06415e85-c2de-4ad8-b10b-6270b4003999",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get elements using data-testid attribute",
+              "fullTitle": "Using Cypress Testing Library Get elements using data-testid attribute",
+              "timedOut": null,
+              "duration": 1029,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.findByTestId('input-city').clear().type('Guiratinga');\ncy.findByTestId('search-time').click();\ncy.findByTestId('best-time').should('be.visible');\ncy.findByTestId('best-hour').should('be.visible').and('contain.text', 'horas');\ncy.findByTestId('best-temperature').should('be.visible').and('contain.text', 'temperatura');",
+              "err": {},
+              "uuid": "1cced0e8-94be-451e-ad5e-27ee8a172ace",
+              "parentUUID": "06415e85-c2de-4ad8-b10b-6270b4003999",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get elements using text",
+              "fullTitle": "Using Cypress Testing Library Get elements using text",
+              "timedOut": null,
+              "duration": 1092,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.findByDisplayValue('São Paulo').clear().type('Guiratinga');\ncy.findByText('Buscar melhor horário').click();\ncy.findByText('O melhor horário para você tomar seu banho hoje é:').should('be.visible');\ncy.findByText(/horas/i).should('be.visible');\ncy.findByText(/temperatura/i).should('be.visible');",
+              "err": {},
+              "uuid": "828f4207-9dec-4b46-a832-e8942084d90c",
+              "parentUUID": "06415e85-c2de-4ad8-b10b-6270b4003999",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get hidden button by data test id and try click",
+              "fullTitle": "Using Cypress Testing Library Get hidden button by data test id and try click",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "d618946b-162f-4e1c-8335-bad4cc4c8498",
+              "parentUUID": "06415e85-c2de-4ad8-b10b-6270b4003999",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get hidden button by text id and try click",
+              "fullTitle": "Using Cypress Testing Library Get hidden button by text id and try click",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "34ad3ff4-ab7e-43d0-b220-46d2c63ea151",
+              "parentUUID": "06415e85-c2de-4ad8-b10b-6270b4003999",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b898bdb6-3153-4344-b4b2-aedbbb481aae",
+            "1cced0e8-94be-451e-ad5e-27ee8a172ace",
+            "828f4207-9dec-4b46-a832-e8942084d90c"
+          ],
+          "failures": [],
+          "pending": [
+            "d618946b-162f-4e1c-8335-bad4cc4c8498",
+            "34ad3ff4-ab7e-43d0-b220-46d2c63ea151"
+          ],
+          "skipped": [],
+          "duration": 3920,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
